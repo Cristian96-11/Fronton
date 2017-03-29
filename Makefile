@@ -8,3 +8,17 @@ fronton1 : fronton1.c winsuport.o winsuport.h
 winsuport.o : winsuport.c winsuport.h
 	gcc -c -Wall winsuport.c -o winsuport.o 
 
+run:
+	./fronton0 prova1.txt 50
+	
+run2:
+	./fronton0 prova2.txt 50
+
+run3:
+	./fronton0 prova3.txt 50
+
+clean:
+	rm *.o fronton0
+	
+run_hilo_f1:
+	./fronton1 prova1.txt 50

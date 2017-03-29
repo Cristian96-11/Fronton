@@ -97,6 +97,7 @@ int carrega_configuracio(FILE *fit)
   int ret=0;
   
   fscanf(fit,"%d %d %d\n",&n_fil,&n_col,&m_por);	   /* camp de joc */
+  //meter un while para leer hasta un maximo de 9 pelotas
   fscanf(fit,"%f %f %f %f\n",&pos_f,&pos_c,&vel_f,&vel_c); /* pilota */
   if ((n_fil!=0) || (n_col!=0))			/* si no dimensions maximes */
   {
